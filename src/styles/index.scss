@@ -1,0 +1,30 @@
+@import 'globals';
+@include react-md-everything;
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;
+}
+
+.home {
+  text-align: center;
+}
+
+.home-img {
+  height: 200px;
+}
+
+.home-header {
+  background-color: #525252;
+  height: 250px;
+  padding: 20px;
+}
+
+.home-intro {
+  font-size: 110%;
+  padding: 20px;
+  text-align: left;
+}

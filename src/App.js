@@ -1,25 +1,54 @@
 import React, { Component } from 'react';
+
+import { Route, Switch } from 'react-router-dom';
+
 import { NavigationDrawer } from 'react-md';
-import logo from './logo.svg';
-import './App.css';
+
+import NavLink from './NavLink';
+
+import Home from './Pages/Home';
+import Parks from './Pages/Parks';
+import Page2 from './Pages/Page2';
+import Flying from './Pages/Flying';
+
+const navItems = [{
+  exact: true,
+  label: 'Home',
+  to: '/',
+  icon: 'home',
+}, {
+  label: 'Parks',
+  to: '/parks',
+  icon: 'pets',
+}, {
+  label: 'Page 2',
+  to: '/page-2',
+  icon: 'donut_large',
+}, {
+  label: 'Flying',
+  to: '/flying',
+  icon: 'flight_takeoff',
+}];
 
 class App extends Component {
   render() {
     return (
-      <NavigationDrawer
-         drawerTitle="react-md with CRA"
-         toolbarTitle="Welcome to react-md"
-       >
-         <div className="App">
-           <header className="App-header">
-             <img src={logo} className="App-logo" alt="logo" />
-             <h1 className="App-title">Welcome to React</h1>
-           </header>
-           <p className="App-intro">
-             To get started, edit <code>src/App.js</code> and save to reload.
-           </p>
-         </div>
-       </NavigationDrawer>
+      <Route
+        render={({ location }) => (
+          <NavigationDrawer
+            drawerTitle="Home"
+            toolbarTitle="Travel with Pups"
+            navItems={navItems.map(props => <NavLink {...props} key={props.to} />)}
+          >
+            <Switch key={location.key}>
+              <Route exact path="/" location={location} component={Home} />
+              <Route path="/parks" location={location} component={Parks} />
+              <Route path="/page-2" location={location} component={Page2} />
+              <Route path="/flying" location={location} component={Flying} />
+            </Switch>
+          </NavigationDrawer>
+        )}
+      />
     );
   }
 }

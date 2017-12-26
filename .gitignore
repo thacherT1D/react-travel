@@ -22,4 +22,4 @@ yarn-error.log*
 
 # build artifacts
 src/**/*.css
-node_modules
+.sass-cache
