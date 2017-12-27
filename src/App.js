@@ -9,7 +9,7 @@ import NavLink from './NavLink';
 import Home from './Pages/Home';
 import Parks from './Pages/Parks';
 import Things from './Pages/Things';
-import Flying from './Pages/Flying';
+import Friends from './Pages/Friends';
 
 const navItems = [{
   exact: true,
@@ -25,8 +25,8 @@ const navItems = [{
   to: '/things',
   icon: 'shop',
 }, {
-  label: 'Flying',
-  to: '/flying',
+  label: 'Friends',
+  to: '/friends',
   icon: 'flight_takeoff',
 }];
 
@@ -44,7 +44,7 @@ class App extends Component {
               <Route exact path="/" location={location} component={Home} />
               <Route path="/parks" location={location} component={Parks} />
               <Route path="/things" location={location} component={Things} />
-              <Route path="/flying" location={location} component={Flying} />
+              <Route path="/friends" location={location} component={Friends} />
             </Switch>
           </NavigationDrawer>
         )}

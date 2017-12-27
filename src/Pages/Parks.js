@@ -17,25 +17,25 @@ export default class Parks extends Component {
           </Media>
           <CardTitle title="Magnusen Park" />
           <CardText>
-            <p>Blop clouds floofs much ruin diet, what a nice floof. Pupper the neighborhood pupper long woofer heckin angery woofer, puggorino lotsa pats. Pats smol boof, puggo. What a nice floof boof such treat blep I am bekom fat you are doing me the shock, bork most angery pupper I have ever seen tungg I am bekom fat. Porgo long doggo you are doin me a concern heckin good boys, most angery pupper I have ever seen super chub most angery pupper I have ever seen h*ck, long woofer heckin angery woofer. </p>
+            <p>Blop clouds floofs much ruin diet, what a nice floof. Pupper the neighborhood pupper long woofer heckin angery woofer, puggorino lotsa pats.</p>
           </CardText>
         </Card>
         <Card className="md-cell">
           <Media>
             <img src={dog6} alt="" />
           </Media>
-          <CardTitle title="Card 2" />
+          <CardTitle title="Greenwood Park" />
           <CardText>
-            <p>Blop clouds floofs much ruin diet, what a nice floof. Pupper the neighborhood pupper long woofer heckin angery woofer, puggorino lotsa pats. Pats smol boof, puggo. What a nice floof boof such treat blep I am bekom fat you are doing me the shock, bork most angery pupper I have ever seen tungg I am bekom fat. Porgo long doggo you are doin me a concern heckin good boys, most angery pupper I have ever seen super chub most angery pupper I have ever seen h*ck, long woofer heckin angery woofer. </p>
+            <p>Blop clouds floofs much ruin diet, what a nice floof. Pupper the neighborhood pupper long woofer heckin angery woofer, puggorino lotsa pats.</p>
           </CardText>
         </Card>
         <Card className="md-cell">
           <Media>
             <img src={dog7} alt="" />
           </Media>
-          <CardTitle title="Card 3" />
+          <CardTitle title="Woodland Park" />
           <CardText>
-            <p>Blop clouds floofs much ruin diet, what a nice floof. Pupper the neighborhood pupper long woofer heckin angery woofer, puggorino lotsa pats. Pats smol boof, puggo. What a nice floof boof such treat blep I am bekom fat you are doing me the shock, bork most angery pupper I have ever seen tungg I am bekom fat. Porgo long doggo you are doin me a concern heckin good boys, most angery pupper I have ever seen super chub most angery pupper I have ever seen h*ck, long woofer heckin angery woofer. </p>
+            <p>Blop clouds floofs much ruin diet, what a nice floof. Pupper the neighborhood pupper long woofer heckin angery woofer, puggorino lotsa pats.</p>
           </CardText>
         </Card>
       </div>
