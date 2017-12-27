@@ -8,7 +8,7 @@ import NavLink from './NavLink';
 
 import Home from './Pages/Home';
 import Parks from './Pages/Parks';
-import Page2 from './Pages/Page2';
+import Things from './Pages/Things';
 import Flying from './Pages/Flying';
 
 const navItems = [{
@@ -21,9 +21,9 @@ const navItems = [{
   to: '/parks',
   icon: 'pets',
 }, {
-  label: 'Page 2',
-  to: '/page-2',
-  icon: 'donut_large',
+  label: 'Things',
+  to: '/things',
+  icon: 'shop',
 }, {
   label: 'Flying',
   to: '/flying',
@@ -37,13 +37,13 @@ class App extends Component {
         render={({ location }) => (
           <NavigationDrawer
             drawerTitle="Home"
-            toolbarTitle="Travel with Pups"
+            toolbarTitle="Doge Travel Guide"
             navItems={navItems.map(props => <NavLink {...props} key={props.to} />)}
           >
             <Switch key={location.key}>
               <Route exact path="/" location={location} component={Home} />
               <Route path="/parks" location={location} component={Parks} />
-              <Route path="/page-2" location={location} component={Page2} />
+              <Route path="/things" location={location} component={Things} />
               <Route path="/flying" location={location} component={Flying} />
             </Switch>
           </NavigationDrawer>

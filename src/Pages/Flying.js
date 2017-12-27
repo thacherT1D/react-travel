@@ -6,9 +6,11 @@ export default class Flying extends Component {
     return (
       <div className="md-grid">
         <h2 className="md-cell md-cell--12 md-text-container">
-          Flying
+          Flying Doggos
         </h2>
-        <Slider id="page-3-slider" className="md-cell md-cell--12" />
+        <p className="md-cell md-cell--12 md-text-container">
+          Doge doge doge
+        </p>
       </div>
     );
   }
