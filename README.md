@@ -6,14 +6,36 @@
 3) Prototyping (Sketch)
 4) Build
 5) Test and Deploy
-6) Next Features
+
 
 #### 1) Problem Statement
 Build a React Web app -- more specifically a Doggo Travel site to explore potential doggo vacations
 
 **Tech Details**
-Build in React using react-router
-Use material design
+Build in React using react-router and use material design
+
+
+#### 2) Wireframes
+
+
+#### 3) Prototyping
+
+
+#### 4) Build
+Built using react
+
+
+**Resources Used**
+React CLI Starter
+doggoipsum
+
+#### 5) Test and Deploy
+Tested locally in chrome, firefox, safari, and IE11 - then deployed with heroku to https://doggo-travel.herokuapp.com
+
+
+#### Next Features / Continuous Improvement
+- Add Petfinder API (https://github.com/drlukeangel/Pet-Finder-API-Javascript-Library)
+- Add Login/Individual User Functionality
 
 
 #### To run this locally
@@ -21,13 +43,3 @@ Use material design
 - `cd react-travel`
 - `npm install`
 - Run locally with `npm start`
-
-
-#### Next Features
-
-- Add Petfinder API (https://github.com/drlukeangel/Pet-Finder-API-Javascript-Library)
-- Add Login/Individual User Functionality
-
-**Resources Used**
-React CLI Starter
-doggoipsum
