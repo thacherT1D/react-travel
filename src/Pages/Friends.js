@@ -9,7 +9,7 @@ export default class Friends extends Component {
           Finding Doggo Friends
         </h2>
         <p className="md-cell md-cell--12 md-text-container">
-          Doge doge doge
+          Doggo doggo doggo
         </p>
       </div>
     );

@@ -36,8 +36,8 @@ class App extends Component {
       <Route
         render={({ location }) => (
           <NavigationDrawer
-            drawerTitle="Home"
-            toolbarTitle="Doge Travel Guide"
+            drawerTitle="Have Doggo Will Travel"
+            toolbarTitle="Doggo Travel Guide"
             navItems={navItems.map(props => <NavLink {...props} key={props.to} />)}
           >
             <Switch key={location.key}>
