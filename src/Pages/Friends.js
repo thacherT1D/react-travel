@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Slider } from 'react-md';
+import { Button, ButtonToolbar } from 'react-bootstrap';
 
 export default class Friends extends Component {
   render() {
@@ -11,6 +11,11 @@ export default class Friends extends Component {
         <p className="md-cell md-cell--12 md-text-container">
           Doggo doggo doggo
         </p>
+        <div>
+          <ButtonToolbar>
+            <Button>Hello</Button>
+          </ButtonToolbar>
+        </div>
       </div>
     );
   }

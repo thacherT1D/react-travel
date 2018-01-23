@@ -4,6 +4,8 @@ import { Route, Switch } from 'react-router-dom';
 
 import { NavigationDrawer } from 'react-md';
 
+import { Nav, Navbar, NavItem, NavDropdown, MenuItem , Toggle, Collapse } from 'react-bootstrap';
+
 import NavLink from './NavLink';
 
 import Home from './Pages/Home';
@@ -35,18 +37,38 @@ class App extends Component {
     return (
       <Route
         render={({ location }) => (
-          <NavigationDrawer
-            drawerTitle="Have Doggo Will Travel"
-            toolbarTitle="Doggo Travel Guide"
-            navItems={navItems.map(props => <NavLink {...props} key={props.to} />)}
-          >
-            <Switch key={location.key}>
-              <Route exact path="/" location={location} component={Home} />
-              <Route path="/parks" location={location} component={Parks} />
-              <Route path="/things" location={location} component={Things} />
-              <Route path="/friends" location={location} component={Friends} />
-            </Switch>
-          </NavigationDrawer>
+          <Navbar collapseOnSelect>
+            <Navbar.Header>
+              <Navbar.Brand>
+                <a href="#brand">Doggo's Day Out</a>
+              </Navbar.Brand>
+              <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+              <Nav>
+                <
+                <NavItem eventKey={1} href="/parks">Parks</NavItem>
+                <NavItem eventKey={2} href="#">
+                  Link
+                </NavItem>
+                <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                  <MenuItem eventKey={3.1}>Action</MenuItem>
+                  <MenuItem eventKey={3.2}>Another action</MenuItem>
+                  <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                </NavDropdown>
+              </Nav>
+              <Nav pullRight>
+                <NavItem eventKey={1} href="#">
+                  Link Right
+                </NavItem>
+                <NavItem eventKey={2} href="#">
+                  Link Right
+                </NavItem>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         )}
       />
     );
