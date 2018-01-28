@@ -16,7 +16,7 @@ Build in React using react-router and use material design
 
 
 #### 2) Wireframes
-![Doggo Wireframes](https://raw.githubusercontent.com/thacherT1D/react-travel/doggo_wireframe.jpg)
+![Doggo Wireframes](https://raw.githubusercontent.com/thacherT1D/react-travel/master/doggo_wireframe.jpg)
 
 #### 3) Prototyping
 
