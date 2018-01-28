@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../styles/index.css';
-import dog1 from '../styles/img/anoir-chafik-37957.jpg';
+import dogHeader from '../styles/img/patrick-hendry-328512.jpg';
 export default class Home extends Component {
   render() {
     return (
       <div className="home">
         <div className="home-header">
-          <img src={dog1} className="home-img" alt="three dogs" />
+          <img src={dogHeader} className="home-img" alt="three dogs" />
         </div>
         <div className="home-intro">
           <p>
