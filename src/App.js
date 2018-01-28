@@ -40,13 +40,12 @@ class App extends Component {
           <Navbar collapseOnSelect>
             <Navbar.Header>
               <Navbar.Brand>
-                <a href="#brand">Doggo's Day Out</a>
+                <a href="#brand">React-Bootstrap</a>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav>
-                <
                 <NavItem eventKey={1} href="/parks">Parks</NavItem>
                 <NavItem eventKey={2} href="#">
                   Link
@@ -69,9 +68,6 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Body>
-            
-          </Body>
         )}
       />
     );
