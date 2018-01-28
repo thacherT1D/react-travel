@@ -69,6 +69,9 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          <Body>
+            
+          </Body>
         )}
       />
     );
